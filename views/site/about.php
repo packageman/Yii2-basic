@@ -16,6 +16,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <code><?= __FILE__ ?></code>
 </div>
-<div ng-controller="aboutCtrl">
-  {{greet}}
+<div>
+  <h1>Test Angular with requirejs</h1>
+  <!-- <div ui-view></div> -->
+  <div ng-controller="aboutCtrl">{{greet}}</div>
 </div>

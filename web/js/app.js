@@ -1,5 +1,4 @@
-'use strict'
-
-define(['angular'], function(angular){
-    return angular.module('myApp', []);
+define(['angular', 'coreModule'], function(angular){
+  var app = angular.module('myApp', ['coreModule']);
+  return app;
 });

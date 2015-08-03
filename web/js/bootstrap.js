@@ -1,5 +1,5 @@
-'use strict'
-
-define(['angular', 'app'], function(angular){
-    return angular.bootstrap(document, ['myApp']);
+define(["jquery", "app"], function($){
+    return $(document).ready(function(){
+      return angular.bootstrap(document, ['myApp']);
+    });
 });
