@@ -1,9 +1,5 @@
-define(function(){
-
+define(['angular', 'angularLazyLoad'], function(angular, lazyLoad){
   var coreModule = angular.module('coreModule', []);
-  coreModule.controller('aboutCtrl', ['$scope', function($scope){
-    $scope.greet = "Hello Requirejs";
-  }]);
-
-  //return coreModule;
+  lazyLoad.configureApp(coreModule);
+  return coreModule;
 });

@@ -2,20 +2,14 @@ require.config({
   paths:{
     angular: "../lib/angular/angular",
     jquery: "../lib/jquery/dist/jquery",
-    // app: "../js/app",
-    coreModule: "../js/coreModule",
-    js: "../js"
-
+    angularLazyLoad: "../lib/angular-couch-potato/dist/angular-couch-potato"
   },
   shim:{
     "angular" : {
       deps: ['jquery'],
       exports: 'angular'
     },
-    "coreModule": {
-      deps: ['angular']
-    },
-    // "app": ['angular', 'coreModule']
+    "angularLazyLoad": ['angular']
   },
   deps: ['../js/bootstrap']
 });
